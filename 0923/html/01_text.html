@@ -1,0 +1,74 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Document</title>
+        <style>
+            h1 {
+                color: red;
+                background-color: antiquewhite;
+                text-align: center;
+            }
+            /* a {
+                color: red;
+                background-color: antiquewhite;
+                text-align: center;
+            } */
+            /* 블록 속성에만 가능 */
+
+            h2 {
+                font-size: 20px;
+                line-height: 5-px; /* 행간 line-height 단위 px, %(100%=1) */
+                letter-spacing: -2px; /* 자간 */
+                column-count: 2; /* 단수 */
+                column-gap: 10px; /* 단 간격 */
+                text-indent: 50px; /* 들여쓰기 */
+            }
+            .trans1 {
+                text-transform: uppercase; /* 대문자로 변경 */
+            }
+            .trans2 {
+                text-transform: lowercase; /* 소문자로 변경 */
+            }
+            .trans3 {
+                text-transform: capitalize; /* 앞 글자만 대문자로 변경 */
+            }
+
+            #wrap {
+                width: 600px;
+                height: 300px;
+                background-color: aquamarine;
+                text-align: center;
+            }
+
+            .date {
+                background-color: fuchsia;
+            }
+            .txt {
+                background-color: antiquewhite;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>여자의 근로는 특별한 보호를 받으며</h1>
+        <a href="#">인라인</a>
+        <h2>
+            대한민국의 주권은 국민에게 있고, 모든 권력은 국민으로부터 나온다. 국가는 주택개발정책등을 통하여 모든 국민이
+            쾌적한 주거생활을 할 수 있도록 노력하여야 한다. 사면·감형 및 복권에 관한 사항은 법률로 정한다. 제3항의
+            승인을 얻지 못한 때에는 그 처분 또는 명령은 그때부터 효력을 상실한다. 이 경우 그 명령에 의하여 개정 또는
+            폐지되었던 법률은 그 명령이 승인을 얻지 못한 때부터 당연히 효력을 회복한다.
+        </h2>
+        <p class="trans1">are you ok?</p>
+        <p class="trans2">ARE YOU OK?</p>
+        <p class="trans3">are you ok?</p>
+
+        <div id="wrap">
+            <p class="date">2026년 9월 23일</p>
+            <p class="txt">
+                이 경우 그 명령에 의하여 개정 또는 폐지되었던 법률은 그 명령이 승인을 얻지 못한 때부터 당연히 효력을
+                회복한다.
+            </p>
+        </div>
+    </body>
+</html>

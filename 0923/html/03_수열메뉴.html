@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Document</title>
+        <style>
+            li:nth-child(2n-1) {
+                background-color: red;
+            }
+            li:nth-child(2n) {
+                background-color: blue;
+            }
+
+            li {
+                list-style: none;
+                width: 100px;
+                height: 50px;
+                background-color: red;
+                color: aqua;
+                border: 1px solid #000;
+                text-align: center;
+                line-height: 50px;
+                float: left;
+            }
+            li:first-of-type {
+                border-radius: 20px 0 0 20px;
+            }
+            li:last-of-type {
+                border-radius: 0 20px 20px 0;
+            }
+        </style>
+    </head>
+    <body>
+        <div>
+            <ul>
+                <li>menu01</li>
+                <li>menu02</li>
+                <li>menu03</li>
+                <li>menu04</li>
+                <li>menu05</li>
+                <li>menu06</li>
+                <li>menu06</li>
+                <li>menu06</li>
+                <li>menu06</li>
+                <li>menu06</li>
+                <li>menu06</li>
+            </ul>
+        </div>
+    </body>
+</html>

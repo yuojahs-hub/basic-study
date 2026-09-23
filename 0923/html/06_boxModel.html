@@ -1,0 +1,70 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Document</title>
+        <style>
+            * {
+                margin: 0;
+                padding: 0;
+            }
+
+            div {
+                width: 100px;
+                height: 100px;
+                text-align: center;
+                line-height: 100px;
+                font-weight: bold;
+            }
+            div:nth-child(1) {
+                background-color: aqua;
+            }
+            div:nth-child(2) {
+                background-color: teal;
+                margin: 20px;
+                /* margin-top: 20px;
+                margin-left: 20px;
+                margin-bottom: 20px;
+                margin-right: 20px; */
+            }
+            div:nth-child(3) {
+                background-color: yellowgreen;
+                padding: 20px;
+            }
+            div:nth-child(4) {
+                background-color: goldenrod;
+                border: 10px solid #000;
+            }
+            div:nth-child(5) {
+                background-color: lavenderblush;
+                margin: 20px;
+                padding: 20px;
+                border: 10px solid #000;
+            }
+            /* total width = content의 width값 + (margin + padding + border) X2 */
+            #big {
+                width: 140px;
+                height: 140px;
+                background-color: skyblue;
+                padding: 30px;
+            }
+            #small {
+                width: 100px;
+                height: 100px;
+                background-color: blue;
+            }
+        </style>
+    </head>
+    <body>
+        <div>BOX1</div>
+        <div>BOX2</div>
+        <div>BOX3</div>
+        <div>BOX4</div>
+        <div>BOX5</div>
+
+        <section id="big">
+            <section id="small"></section>
+        </section>
+    </body>
+</html>

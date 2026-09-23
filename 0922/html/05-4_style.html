@@ -1,0 +1,99 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Navigation</title>
+        <style>
+            /* 초기화 */
+            /* * {
+                margin: 0;
+                padding: 0;
+            } */
+            li {
+                list-style: none;
+            }
+            a {
+                text-decoration: none;
+            }
+
+            h1 {
+                color: yellowgreen;
+                background-color: black;
+            }
+            h1:hover {
+                color: black;
+                background-color: yellowgreen;
+            }
+
+            /* 의사선택자 */
+            a {
+                color: lightpink;
+                background-color: bisque;
+            }
+            a:hover {
+                color: bisque;
+                background-color: lightpink;
+            }
+
+            input[type="text"] {
+                background-color: navajowhite;
+            }
+            input[type="password"] {
+                background-color: aquamarine;
+            }
+
+            /* 테이블 */
+            table {
+                border-collapse: collapse;
+            }
+            td {
+                border: 2px solid black;
+            }
+            table .blue {
+                background-color: cadetblue;
+            }
+            table .red {
+                background-color: beige;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>Navigation</h1>
+
+        <ul>
+            <li><a href="#">MENU01</a></li>
+            <li><a href="#">MENU02</a></li>
+            <li><a href="#">MENU03</a></li>
+            <li><a href="#">MENU04</a></li>
+        </ul>
+
+        <form>
+            이름 : <input type="text" /> <br />
+            비밀번호 : <input type="password" />
+        </form>
+        <p>&nbsp;</p>
+        <table>
+            <tr class="red">
+                <td>테이블01</td>
+                <td>테이블02</td>
+                <td>테이블03</td>
+            </tr>
+            <tr class="blue">
+                <td>테이블01</td>
+                <td>테이블02</td>
+                <td>테이블03</td>
+            </tr>
+            <tr class="red">
+                <td>테이블01</td>
+                <td>테이블02</td>
+                <td>테이블03</td>
+            </tr>
+            <tr class="blue">
+                <td>테이블01</td>
+                <td>테이블02</td>
+                <td>테이블03</td>
+            </tr>
+        </table>
+    </body>
+</html>
