@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Document</title>
+        <style>
+            * {
+                margin: 0;
+                padding: 0;
+            }
+            #wrap {
+                width: 1000px;
+                height: 600px;
+                background-color: #49f17b;
+
+                display: flex; /* 축 */
+                /* flex-direction: column; */
+                justify-content: space-between; /* 축의 방향 */
+                align-items: center;
+            }
+            #wrap > div {
+                width: 200px;
+                height: 100px;
+                background-color: #9cd89c;
+                border: 1px solid #000;
+                box-sizing: border-box;
+
+                /* text-align: center;
+                line-height: 100px; */
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                /* flex 사용해서 가운데 정렬하면 w나 h값 조정해도 무조건 가운데 정렬 */
+            }
+        </style>
+    </head>
+    <body>
+        <div id="wrap">
+            <div>BOX1</div>
+            <div>BOX2</div>
+            <div>BOX3</div>
+            <div>BOX4</div>
+        </div>
+    </body>
+</html>

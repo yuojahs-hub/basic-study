@@ -1,0 +1,149 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+li {
+    list-style: none;
+}
+a {
+    text-decoration: none;
+}
+
+/* header */
+#header {
+    width: 760px;
+    height: 160px;
+    background-color: #4d3838;
+    padding: 10px;
+
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
+}
+#logo {
+    width: 160px;
+    height: 140px;
+    background-color: #927a7a;
+}
+#nav {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+#gnb {
+    width: 320px;
+    height: 30px;
+    background-color: #e9adad;
+}
+#lnb {
+    width: 570px;
+    height: 50px;
+    background-color: #fa8e8e;
+    padding: 10px;
+}
+#lnb ul {
+    display: flex;
+    /* gap: 10px; */
+    justify-content: space-between;
+}
+#lnb ul li {
+    /* margin-right: 10px; */
+}
+/* #lnb ul li:last-child {
+    margin-right: 0;
+} */
+#lnb ul li a {
+    width: 130px;
+    height: 30px;
+    color: #d86060;
+    background-color: #fff;
+    font-size: 20px;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#lnb ul li a:hover {
+    color: #302525;
+    background-color: #fa8e8e;
+}
+/* main */
+#main {
+    width: 760px;
+    height: 780px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    background-color: #927a7a;
+    padding: 10px;
+    margin: 0 auto;
+}
+
+#main > section {
+    border: 1px solid #000;
+    padding: 10px;
+}
+#main > section:first-child {
+    padding: 0;
+}
+#section01 {
+    width: 740px;
+    height: 250px;
+}
+#section02 {
+    width: 490px;
+    height: 160px;
+}
+#section03 {
+    width: 240px;
+    height: 160px;
+}
+#section04 {
+    width: 240px;
+    height: 160px;
+}
+#section05 {
+    width: 240px;
+    height: 160px;
+}
+#section06 {
+    width: 240px;
+    height: 160px;
+}
+#section07 {
+    width: 240px;
+    height: 160px;
+    background-image: url(https://placehold.co/220x80);
+    background-repeat: no-repeat;
+    background-position: 10px 10px;
+}
+#section08 {
+    width: 490px;
+    height: 160px;
+    background: url(https://placehold.co/230x140) no-repeat 10px 10px;
+}
+
+/* footer */
+#footer {
+    width: 760px;
+    height: 80px;
+    background-color: #4d3838;
+    padding: 10px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    margin: 0 auto;
+}
+#footer_box1 {
+    width: 190px;
+    height: 60px;
+    background-color: #ffe3e3;
+}
+#footer_box2 {
+    width: 540px;
+    height: 30px;
+    background-color: #c79696;
+}

@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>layout01 - float</title>
+        <style>
+            * {
+                margin: 0;
+                padding: 0;
+            }
+            #wrap {
+                width: 900px;
+                margin: 0 auto;
+            }
+            #header {
+                width: 290px;
+                height: 600px;
+                background-color: #06ff82;
+                float: left;
+                margin-right: 10px;
+            }
+            #section01 {
+                width: 600px;
+                height: 100px;
+                background-color: #adffdd;
+                float: left;
+            }
+            #section02 {
+                width: 600px;
+                height: 380px;
+                background-color: #13ffd8;
+                float: left;
+                margin: 10px 0;
+            }
+            #section03 {
+                width: 600px;
+                height: 100px;
+                background-color: #c5ffff;
+                float: left;
+            }
+        </style>
+    </head>
+    <body>
+        <div id="wrap">
+            <header id="header">header</header>
+            <section id="section01">section01</section>
+            <section id="section02">section02</section>
+            <section id="section03">section03</section>
+        </div>
+    </body>
+</html>

@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Document</title>
+        <style>
+            #container {
+                width: 80%;
+                /* width값 %로 지정하면 반응형 웹 제작 가능 */
+                height: 600px;
+                background-color: yellow;
+
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: center;
+                align-items: center;
+                /* 박스 정렬 */
+            }
+            #container > div {
+                width: 100px;
+                height: 100px;
+                background-color: red;
+                border: 1px solid #000;
+                font-size: 25px;
+                font-weight: bold;
+
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                /* 글자 정렬 */
+            }
+
+            .box01 {
+                order: 3;
+            }
+            .box02 {
+                order: 2;
+            }
+            .box03 {
+                order: 13;
+            }
+            .box04 {
+                order: 2;
+            }
+        </style>
+    </head>
+    <body>
+        <div id="container">
+            <div class="box01">1</div>
+            <div class="box02">2</div>
+            <div class="box03">3</div>
+            <div class="box04">4</div>
+        </div>
+    </body>
+</html>

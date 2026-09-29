@@ -1,0 +1,260 @@
+/* font */
+@import url("https://fonts.googleapis.com/css2?family=Black+Ops+One&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap");
+
+/* reset */
+* {
+    margin: 0;
+    padding: 0;
+}
+li {
+    list-style: none;
+}
+a {
+    text-decoration: none;
+    color: #2c2c2c;
+}
+body {
+    font-family: "Nanum Gothic", sans-serif;
+}
+
+/* layout */
+#header {
+    width: 960px;
+    height: 160px;
+    background-color: #4b7cd8;
+    margin: 0 auto;
+    /* 중앙정렬 */
+
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    box-sizing: border-box;
+}
+#main {
+    width: 960px;
+    background-color: #909baf41;
+    margin: 0 auto;
+    /* 중앙정렬 */
+
+    display: flex;
+    gap: 20px;
+}
+#footer {
+    width: 100%px;
+    height: 100px;
+    background-color: #8eb4fa;
+    margin: 0 auto;
+    /* 중앙정렬 */
+}
+
+/* header */
+#title {
+    margin-top: 60px;
+    margin-left: 20px;
+}
+#title h1 {
+    font-family: "Black Ops One", system-ui;
+    font-size: 40px;
+    line-height: 1;
+    color: aliceblue;
+}
+#title h2 {
+    font-family: "Oswald", sans-serif;
+    font-size: 35px;
+    line-height: 1;
+    color: rgb(30, 57, 80);
+}
+
+#nav {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+#nav ul.gnb {
+    display: flex;
+}
+#nav ul.gnb {
+}
+#nav ul.gnb li {
+}
+#nav ul.gnb li a {
+    display: block;
+    padding: 8px 10px;
+    border: 1px solid #16243f;
+    background-color: #bbc2f3;
+    font-size: 14px;
+    font-weight: bold;
+}
+#nav ul.gnb li:first-child a {
+    border-radius: 10px 0 0 10px;
+}
+#nav ul.gnb li:last-child a {
+    border-radius: 0 10px 10px 0;
+}
+#nav ul.gnb li a:hover {
+    background-color: #2e4d86;
+    color: #bbc2f3;
+}
+
+#nav ul.lnb {
+    display: flex;
+}
+#nav ul.lnb {
+}
+#nav ul.lnb li {
+}
+#nav ul.lnb li a {
+    display: block;
+    padding: 12px 25px;
+    border: 1px solid #2e4d86;
+    background-color: #7b84ce;
+    color: #e0e3fc;
+    font-size: 14px;
+    font-weight: bold;
+}
+#nav ul.lnb li:first-child a {
+    border-radius: 15px 0 0 15px;
+}
+#nav ul.lnb li:last-child a {
+    border-radius: 0 15px 15px 0;
+}
+#nav ul.lnb li a:hover {
+    background-color: #bbc2f3;
+    color: #2e4d86;
+}
+
+/***** main *****/
+#contents {
+    background-color: #bbc2f3;
+    border: 1px solid #2e4d86;
+    flex: 1;
+}
+#aside {
+    background-color: #767db3;
+    width: 25%;
+    border: 1px solid #151a25;
+}
+
+#contents .article {
+    padding: 20px;
+}
+#contents .article h2 {
+    width: 170px;
+    text-transform: capitalize;
+    margin-bottom: 10px;
+
+    border-bottom: 2px dashed #16243f;
+    padding-bottom: 10px;
+}
+#contents .article p {
+    line-height: 1.6;
+    letter-spacing: -2px;
+}
+
+/* aside */
+
+/* 탭선택 */
+/* first tab */
+input:nth-of-type(1) {
+    display: none;
+}
+input:nth-of-type(1) ~ div:nth-of-type(1) {
+    display: none;
+}
+input:nth-of-type(1):checked ~ div:nth-of-type(1) {
+    display: block;
+}
+
+/* secound tab */
+input:nth-of-type(2) {
+    display: none;
+}
+input:nth-of-type(2) ~ div:nth-of-type(2) {
+    display: none;
+}
+input:nth-of-type(2):checked ~ div:nth-of-type(2) {
+    display: block;
+}
+
+/* 탭 모양 만들기 */
+.botton {
+    display: flex;
+}
+.botton label {
+    display: block;
+    /* display: inline-block 해도 반갈 가능
+    단, 해당 부모 블록에 테두리 없어야 됨 */
+
+    width: 50%;
+    height: 40px;
+    border-bottom: 1px solid #151a25;
+
+    /* display: flex;
+    justify-content: center;
+    align-items: center */
+    text-align: center;
+    line-height: 40px;
+    font-size: 18px;
+    font-weight: bold;
+}
+.botton label.first {
+    border-right: 1px solid #151a25;
+    background-color: #bbc2f3;
+    color: #16243f;
+}
+.botton label.secound {
+    background-color: #bbc2f3;
+    color: #16243f;
+}
+
+input:nth-of-type(1):checked ~ .botton label.first {
+    background-color: #16243f;
+    color: #bbc2f3;
+}
+input:nth-of-type(2):checked ~ .botton label.secound {
+    background-color: #16243f;
+    color: #bbc2f3;
+}
+
+/* 탭 아이템 */
+.tab_item ul li {
+    border-bottom: 1px solid #37445f;
+    padding: 10px;
+}
+.tab_item ul li a {
+    display: flex;
+}
+.tab_item ul li a .thumnail {
+    margin-right: 10px;
+}
+.tab_item ul li a .description {
+}
+.tab_item ul li a .description strong {
+    display: block;
+    margin-bottom: 5px;
+
+    width: 160px;
+    /* 한줄 글자 생략 삼총사 w값 설정 필수  */
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.tab_item ul li a .description em {
+    font-style: normal;
+    font-size: 14px;
+}
+
+/* footer */
+#footer {
+    display: flex;
+    flex-direction: column;
+
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+#footer address {
+    font-style: normal;
+}

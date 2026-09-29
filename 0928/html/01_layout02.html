@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>layout - flex</title>
+        <style>
+            * {
+                margin: 0;
+                padding: 0;
+            }
+            #wrap {
+                width: 900px;
+                margin: 0 auto;
+            }
+            #header {
+                width: 900px;
+                height: 80px;
+                background-color: rgb(221, 73, 73);
+                margin-bottom: 10px;
+            }
+            #main {
+                display: flex;
+                gap: 10px;
+            }
+            #nav {
+                width: 300px;
+                height: 500px;
+                background-color: #d66060;
+                /* margin-right: 10px; */
+            }
+            #content {
+                width: 590px;
+                height: 500px;
+                background-color: #914949;
+                margin-bottom: 10px;
+            }
+            #footer {
+                width: 900px;
+                height: 80px;
+                background-color: #ffc0c0;
+            }
+        </style>
+    </head>
+    <body>
+        <div id="wrap">
+            <header id="header">header</header>
+            <main id="main">
+                <nav id="nav">nav</nav>
+                <section id="content">content</section>
+            </main>
+            <footer id="footer">footer</footer>
+        </div>
+    </body>
+</html>
